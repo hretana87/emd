@@ -54,7 +54,10 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: emd_production
-  username: emd
-  password: <%= ENV['EMD_DATABASE_PASSWORD'] %>
+  adapter: mysql2
+  encoding: utf8
+  username: henry
+  password: lamadreteresa1
+  database: emd
+  pool: 5
+  timeout: 5000
