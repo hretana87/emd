@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Emd</title>
+    <title>Urbano Web</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,10 +9,11 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
 
-  <body id="page-top">
+  <body id="page-top" data-spy="scroll" data-target=".mainNav">
     <%= render 'shared/header' %>
     <%= render 'shared/intro' %>
-    <%= render 'shared/services' %>
+    <%= render 'shared/photo' %>
+    <%= render 'shared/video' %>
     <%= render 'shared/contact' %>
     <%= render 'shared/footer' %>
   </body>
