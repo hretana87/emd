@@ -28,11 +28,20 @@ class MessagesController < ApplicationController
 
     respond_to do |format|
       if @message.save
+        begin
+        # Sends email to user when user is created.
+           MessageMailer.sample_email(@message).deliver
 
-         # Sends email to user when user is created.
-         MessageMailer.sample_email(@message).deliver
+           logger.info "--- Mensaje enviado exitosamente ---"
 
-        format.html { redirect_to :root, notice: 'Message was successfully created.' }
+           format.html { redirect_to @message, notice: 'Message was successfully created.' }
+        rescue => ex
+  logger.error ex.message 
+          logger.info "xxx El mensaje no se pudo enviar xxx"
+          format.html { redirect_to root_path+"#contact", notice: ex.message }
+        end
+
+        
       else
         format.html { render :new }
       end
