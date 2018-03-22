@@ -1,0 +1,57 @@
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <%= form_for message, :html => {:class => "form-horizontal center"} do |f| %>
+      <% if message.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(message.errors.count, "error") %> prohibited this message from being saved:</h2>
+
+          <ul>
+          <% message.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="form-group">
+        <div class="row align-items-center">
+          <div class="col-3">
+            <%= f.label :name, "Nombre:", class: "control-label" %>
+          </div>
+           <div class="col">
+            <%= f.text_field :name, class: "form-control" %>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="row align-items-center">
+          <div class="col-3">
+            <%= f.label :contact, "Tel o email:", class: "control-label" %>
+          </div>
+           <div class="col">
+            <%= f.text_field :contact, class: "form-control" %>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="row align-items-center">
+          <div class="col-3">
+            <%= f.label :message, "Mensaje:", class: "control-label" %>
+          </div>
+           <div class="col">
+            <%= f.text_area :message, class: "form-control" %>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Enviar mensaje", class: "btn btn-default btn-primary" %>  
+      </div>
+    <% end %>
+        </div>
+      </div>
+    </div>
