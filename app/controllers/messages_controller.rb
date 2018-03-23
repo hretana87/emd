@@ -32,16 +32,12 @@ class MessagesController < ApplicationController
         # Sends email to user when user is created.
            MessageMailer.sample_email(@message).deliver
 
-           logger.info "--- Mensaje enviado exitosamente ---"
-
-           format.html { redirect_to @message, notice: 'Message was successfully created.' }
+           format.html { redirect_to root_path+"#contact", notice: 'Su mensaje fue enviado, le responderemos a la brevedad.' }
         rescue => ex
-  logger.error ex.message 
-          logger.info "xxx El mensaje no se pudo enviar xxx"
-          format.html { redirect_to root_path+"#contact", notice: ex.message }
+          logger.error ex.message 
+          logger.info "----------------CORREO FALLIDO--------------------"
+          format.html { redirect_to root_path+"#contact", notice: 'Su mensaje fue enviado, le responderemos a la brevedad.' }
         end
-
-        
       else
         format.html { render :new }
       end
