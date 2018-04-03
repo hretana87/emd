@@ -92,6 +92,7 @@ config.action_mailer.smtp_settings = {
  :user_name            => ENV['GMAIL_USERNAME'],
  :password             => ENV['GMAIL_PASSWORD'],
  :authentication       => "plain",
+ :openssl_verify_mode => "none",
 :enable_starttls_auto => true
 }
 end
