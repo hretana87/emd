@@ -35,7 +35,7 @@ class MessagesController < ApplicationController
            format.html { redirect_to root_path+"#contact", notice: 'Su mensaje fue enviado, le responderemos a la brevedad.' }
         rescue => ex
           logger.error ex.message 
-          logger.info "----------------CORREO FALLIDO--------------------"
+          logger.info '----------------CORREO FALLIDO--------------------'
           format.html { redirect_to root_path+"#contact", notice: ex.message }
         end
       else

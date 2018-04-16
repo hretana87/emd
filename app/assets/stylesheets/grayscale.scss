@@ -60,7 +60,7 @@ a:focus, a:hover {
 }
 
 #mainNav .navbar-toggler {
-  font-size: 14px;
+  font-size: 5rem;
   padding: 11px;
   color: white;
   border: 1px solid white;
@@ -68,10 +68,12 @@ a:focus, a:hover {
 
 #mainNav .navbar-brand {
   font-weight: 700;
+  font-size: 5rem;
 }
 
 #mainNav a {
   color: white;
+  font-size: 2rem;
 }
 
 #mainNav .navbar-nav .nav-item {
