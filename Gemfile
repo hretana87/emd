@@ -30,8 +30,6 @@ gem 'capistrano-rvm'
 
 gem "font-awesome-rails"
 
-gem 'simple-line-icons-rails'
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster.
