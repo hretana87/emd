@@ -11,7 +11,7 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Servicios</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Nosotros</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Noticias</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contacto</a>
@@ -32,79 +32,88 @@
     </header>
 
     <!-- Servicios Grid Section -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Servicios</h2>
-        <hr class="star-dark mb-5">
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<%= asset_path('portfolio/cabin.png') %>" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<%= asset_path('portfolio/cake.png') %>" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<%= asset_path('portfolio/circus.png') %>" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<%= asset_path('portfolio/game.png') %>" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<%= asset_path('portfolio/safe.png') %>" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<%= asset_path('portfolio/submarine.png') %>" alt="">
-            </a>
-          </div>
+          <section class="portfolio" id="portfolio">
+            <div class="container">
+              <h2 class="text-center text-uppercase text-secondary mb-0">Servicios</h2>
+              <hr class="star-dark mb-5">        
+              <div class="container">
+        <div class="gal">
+                  <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">                  
+                        <i class="fa fa-search-plus fa-2x"><p>Baño y peluquería</p></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="<%= asset_path('portfolio/peluqueria.jpg') %>" alt="">                                  
+                  </a>          
+                  <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fa fa-search-plus fa-2x"><p>Farmacia</p></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="<%= asset_path('portfolio/farmacia.jpg') %>" alt="">                  
+                  </a>
+                  <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fa fa-search-plus fa-2x"><p>Cirugía general</p></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="<%= asset_path('portfolio/cirugia.jpg') %>" alt="">                    
+                  </a>
+                  <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fa fa-search-plus fa-2x"><p>Limpieza dental</p></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="<%= asset_path('portfolio/dental.jpg') %>" alt="">                    
+                  </a>
+                  <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fa fa-search-plus fa-2x"><p>Enfermedades de la piel</p></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="<%= asset_path('portfolio/piel.jpg') %>" alt="">                    
+                  </a>                
+                  <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fa fa-search-plus fa-2x"><p>Medicina general en perros y gatos</p></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="<%= asset_path('portfolio/medicina.jpg') %>" alt="">                    
+                  </a>
+                  <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-7">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fa fa-search-plus fa-2x"><p>Alimentos fisiológicos y de prescripción médica</p></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="<%= asset_path('portfolio/alimento.jpg') %>" alt="">                    
+                  </a>
+                  <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-8">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fa fa-search-plus fa-2x"><p>Vacunación y desparasitación</p></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="<%= asset_path('portfolio/vacunas.jpg') %>" alt="">                    
+                  </a>                  
         </div>
+        
       </div>
-    </section>
+      </div>
+      </div>
+            </div>
+          </section>
 
-    <!-- Servicios Section -->
+    <!-- Noticias Section -->
     <section class="bg-primary text-white mb-0" id="about">
       <div class="container-fluid">
-        <h2 class="text-center text-uppercase text-white">Nosotros</h2>
+        <h2 class="text-center text-uppercase text-white">Noticias</h2>
         <hr class="star-light mb-5">
         <div class="container">
         <div class="col-lg-12 mx-auto">
@@ -145,9 +154,7 @@
         <h2 class="text-center text-uppercase text-secondary mb-0">Contáctenos</h2>
         <hr class="star-dark mb-5">
         <div class="row">
-          <div class="col-lg-6 mx-auto">
-            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+          <div class="col-lg-8 mx-auto">
             <form name="sentMessage" id="contactForm" novalidate="novalidate">
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
@@ -183,9 +190,7 @@
                 <button type="submit" class="btn btn-secondary btn-xl" id="sendMessageButton">Enviar</button>
               </div>
             </form>
-          </div>
-          <div class="col-lg-6 mx-auto">
-          <iframe width="100%" height="500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=9.8598053, -83.9174925&amp;aq=0&amp;ie=UTF8&amp;hq=&amp;hnear=9.8598053, -83.9174925&amp;t=m&amp;output=embed"></iframe>
+          </div>          
         </div>
         </div>
       </div>
@@ -196,10 +201,13 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Dirección:</h4>
+            <h4 class="text-uppercase mb-4">¿Cómo llegar?:</h4>
+            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.google.com/maps/place/Centro+M%C3%A9dico+Veterinario+Santa+Clara/@9.8598053,-83.9196812,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0dfee6af5f365:0x8afb16b947b608d5!8m2!3d9.8598053!4d-83.9174925">
+                  <i class="fa fa-fw fa-map"></i>
+                </a>    
             <p class="lead mb-0">De la esquina sureste de los tribunales
               <br>300m Sur y 25m Oeste
-              <br>Cartago, Costa Rica</p>
+              <br>Cartago, Costa Rica</p>                      
           </div>
           <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Síganos en Facebook</h4>            
@@ -207,10 +215,16 @@
                   <i class="fa fa-fw fa-facebook"></i>
                 </a>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Teléfonos: </h4>
-            <p class="lead mb-0">Clínica: 2551 1265
-              <br>WhatsApp: 6030 3060</p>
+            <a class="btn btn-outline-light btn-social text-center rounded-circle">
+                  <i class="fa fa-fw fa-home"></i>
+            </a>
+            <p>2551 1265<p/>
+            <a class="btn btn-outline-light btn-social text-center rounded-circle">
+              <i class="fa fa-fw fa-whatsapp"></i>
+            </a>
+            <p>6030 3060<p/>
           </div>
         </div>
       </div>
@@ -240,13 +254,13 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0">Baño y peluquería</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="<%= asset_path('portfolio/cabin.png') %>" alt="">
+              <img class="img-fluid mb-5" src="<%= asset_path('portfolio/peluqueria.jpg') %>" alt="">
               <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
-                Close Project</a>
+                Close</a>
             </div>
           </div>
         </div>
@@ -262,13 +276,13 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0">Farmacia</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="<%= asset_path('portfolio/cake.png') %>" alt="">
+              <img class="img-fluid mb-5" src="<%= asset_path('portfolio/farmacia.jpg') %>" alt="">
               <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
-                Close Project</a>
+                Close</a>
             </div>
           </div>
         </div>
@@ -284,13 +298,13 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0">Cirugía general</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="<%= asset_path('portfolio/circus.png') %>" alt="">
+              <img class="img-fluid mb-5" src="<%= asset_path('portfolio/cirugia.jpg') %>" alt="">
               <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
-                Close Project</a>
+                Close</a>
             </div>
           </div>
         </div>
@@ -306,13 +320,13 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0">Limpieza dental</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="<%= asset_path('portfolio/game.png') %>" alt="">
+              <img class="img-fluid mb-5" src="<%= asset_path('portfolio/dental.jpg') %>" alt="">
               <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
-                Close Project</a>
+                Close</a>
             </div>
           </div>
         </div>
@@ -328,13 +342,13 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0">Enfermedades de la piel</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="<%= asset_path('portfolio/safe.png') %>" alt="">
+              <img class="img-fluid mb-5" src="<%= asset_path('portfolio/piel.jpg') %>" alt="">
               <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
-                Close Project</a>
+                Close</a>
             </div>
           </div>
         </div>
@@ -350,13 +364,57 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0">Medicina general en perros y gatos</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="<%= asset_path('portfolio/submarine.png') %>" alt="">
+              <img class="img-fluid mb-5" src="<%= asset_path('portfolio/medicina.jpg') %>" alt="">
               <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
-                Close Project</a>
+                Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 7 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-7">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Alimentos fisiológicos y de prescripción médica</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="<%= asset_path('portfolio/alimento.jpg') %>" alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 8 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-8">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Control de vacunación y desparasitación</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="<%= asset_path('portfolio/vacunas.jpg') %>" alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close</a>
             </div>
           </div>
         </div>
