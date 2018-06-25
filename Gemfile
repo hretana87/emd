@@ -46,6 +46,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'client_side_validations'
 
+gem 'devise'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger cons
   gem 'byebug', platform: :mri

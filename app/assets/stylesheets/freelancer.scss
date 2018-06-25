@@ -1,5 +1,6 @@
 body {
   font-family: 'Lato';
+  font-size: 18px;
 }
 
 h1,
@@ -102,7 +103,7 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-  color: #fff;
+  color: #815526;
   font-size: 2.25rem;
 }
 
@@ -112,7 +113,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fff;
+  color: #815526;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
@@ -174,11 +175,18 @@ header.masthead {
 header.masthead h1 {
   font-size: 3rem;
   line-height: 3rem;
+  color: #815526;
+  transition: opacity 300ms ease-in-out 1s;
 }
 
 header.masthead h2 {
   font-size: 1.3rem;
   font-family: 'Lato';
+  color: #815526;
+}
+
+.small-header {
+  
 }
 
 @media (min-width: 992px) {
@@ -188,7 +196,7 @@ header.masthead h2 {
   }
   header.masthead h1 {
     font-size: 4.75em;
-    line-height: 4rem;
+    line-height: 4rem;    
   }
   header.masthead h2 {
     font-size: 1.75em;
@@ -325,11 +333,15 @@ form .row:first-child .floating-label-form-group {
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: #8fd093;
-  color: #fff;
+  color: #815526;
+  font-size: 20px;
+
 }
 
 .copyright {
   background-color: #fb9cf6;
+  color: #815526;
+  font-size: 20px;
 }
 
 a {
@@ -385,26 +397,19 @@ a:focus, a:hover, a:active {
   background-color: #815526;
 }
 
-.gal {
-  
-  
-  -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
+.btn-outline-light{
+  border-color: #815526;
+  color: #815526;
+}
+
+.btn-outline-light:hover{
+  color: #815526;
+}
+.img-header{
+  width: 100px;
+  height: 100px;
+}
     
-  
-  } 
-  .gal img{ width: 100%; padding: 7px 0;}
-@media (max-width: 500px) {
-    
-    .gal {
-  
-  
-  -webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-    column-count: 1;
-    
-  
-  }
-    
-  }
+.media {
+  color: #815526;
+}
