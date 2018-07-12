@@ -4,6 +4,12 @@ Rails.application.routes.draw do
   
   root 'welcome#index'
 
+  resources :servicios
+
+  resources :colaboradores
+
+  resources :contacto
+
   namespace :admin do
     resources :users
   end
