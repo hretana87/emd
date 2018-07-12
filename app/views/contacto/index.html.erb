@@ -1,0 +1,47 @@
+<!-- Contact Section -->
+<section class="portfolio" id="contact">
+  <div class="container">
+    <h2 class="text-center text-uppercase text-secondary mb-0">Contáctenos</h2>
+    <hr class="star-dark mb-5">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>Nombre</label>
+              <input class="form-control" id="name" type="text" placeholder="Nombre" required="required" data-validation-required-message="Por favor ingrese su nombre.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>Correo electrónico</label>
+              <input class="form-control" id="email" type="email" placeholder="Correo electrónico" required="required" data-validation-required-message="Por favor ingrese un correo electrónico válido.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>Número de teléfono</label>
+              <input class="form-control" id="phone" type="tel" placeholder="Número de teléfono" required="required" data-validation-required-message="Por favor ingrese su número de teléfono.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>Mensaje</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Mensaje" required="required" data-validation-required-message="Por favor escriba su mensaje."></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <br>
+          <div id="success"></div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-secondary btn-xl" id="sendMessageButton">Enviar</button>
+          </div>
+        </form>
+      </div>          
+    </div>
+    </div>
+  </div>
+</section>

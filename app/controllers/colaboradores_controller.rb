@@ -1,0 +1,2 @@
+class ColaboradoresController < ApplicationController
+end
